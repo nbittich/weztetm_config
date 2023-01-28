@@ -16,6 +16,11 @@ return {
       key = 't',
       mods = 'CTRL',
       action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' }
-    }
+    },
+    {
+      key = 'u',
+      mods = 'CTRL',
+      action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' }
+    },
   },
 }
