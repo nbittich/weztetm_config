@@ -1,6 +1,8 @@
 local wezterm = require("wezterm")
 
 return {
+    font = wezterm.font_with_fallback { 'CodeNewRoman Nerd Font', "JetBrains Mono" },
+    font_size = 14.0,
     window_padding = {
         left = "0.3cell",
         right = "0cell",
