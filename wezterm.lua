@@ -4,7 +4,7 @@ return {
     font = wezterm.font_with_fallback { 'CodeNewRoman Nerd Font', "JetBrains Mono" },
     font_size = 14.0,
     text_background_opacity = 1.0,
-    window_background_opacity = 0.85,
+    window_background_opacity = 0.93,
     -- color_scheme = "tokyonight",
     window_padding = {
         left = "0.3cell",
