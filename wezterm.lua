@@ -1,6 +1,7 @@
 local wezterm = require("wezterm")
 
-return {
+
+local config = {
     font = wezterm.font_with_fallback { 'CodeNewRoman Nerd Font', "JetBrains Mono" },
     font_size = 14.0,
     text_background_opacity = 1.0,
@@ -22,6 +23,7 @@ return {
             mods = "CTRL",
             action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
         },
+
         {
             key = "u",
             mods = "CTRL",
@@ -40,3 +42,15 @@ return {
 
     },
 }
+
+
+for i = 1, 8 do
+  -- CTRL+ALT + number to move to that position
+  table.insert(config.keys, {
+    key = tostring(i),
+    mods = 'CTRL|ALT',
+    action = wezterm.action.MoveTab(i - 1),
+  })
+end
+
+return config
