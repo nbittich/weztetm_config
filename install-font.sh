@@ -1,7 +1,7 @@
 
 FILE=CodeNewRoman.zip
 
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/$FILE
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/$FILE
 
 
 
